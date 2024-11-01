@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css/article_style.css">
     <title>Article</title>
 </head>
 <body>
@@ -36,14 +37,14 @@
 
             <div class="content__list-of-rules">
                 <ul>
-                    <li>Основные принципы работы с отступами</li>
-                    <li>Первый принцип: отступы от предыдущего к следующему</li>
-                    <li>Второй принцип: отступы задаются только между соседями</li>
-                    <li>Третий принцип: у последнего элемента группы обнуляем отступ</li>
+                    <li><a href="#rules">Основные принципы работы с отступами</a></li>
+                    <li><a href="#first-rule">Первый принцип: отступы от предыдущего к следующему</a></li>
+                    <li><a href="#second-rule">Второй принцип: отступы задаются только между соседями</a></li>
+                    <li><a href="#third-rule">Третий принцип: у последнего элемента группы обнуляем отступ</a></li>
                 </ul>
             </div>
 
-            <div class="content__rules">
+            <div class="content__rules" id="rules">
                 <h4 class="content__rules-subtitle">Основные принципы работы с отступами</h4>
 
 
@@ -57,7 +58,7 @@
 
             </div>
 
-            <div class="content__rules-first">
+            <div class="content__rules-first" id="first-rule">
                 <h4 class="content__rules-subtitle">Отступы задаются от предыдущего элемента к следующему</h4>
 
                 <p class="content__rules-text">Это значит, что в вёрстке нужно стараться использовать CSS-свойства <b>margin-right</b> и
@@ -65,13 +66,12 @@
                     отступов слева и сверху полностью.
                 </p>
 
-                <img class="content__rules-img" src="./img/1.jpg" alt="img1">
+                <figure>
+                    <img class="content__rules-img" src="./img/1.jpg" alt="img1">
+                    <figcaption>На скриншоте видно, как правильно задвать отступы, - только справа и снизу (показано оранжевым)</figcaption>
+                </figure>
 
                 <div class="content-rules-info">
-                    <p>На скриншоте видно, как правильно задавать отступы, — только справа и снизу
-                            (показано оранжевым)
-                    </p>
-
                     <p>Внешние отступы сверху и слева <b>(margin-top и margin-left)</b> заменяются на
                             аналогичные внутренние отступы <b>(padding)</b> у родителя элементов.
                     </p>
@@ -83,7 +83,7 @@
                     </p>
                 </div>
 
-                <div class="content__rules-second">
+                <div class="content__rules-second" id="second-rule">
                         <h4 class="content__rules-second-subtitle">Отступы задаются только между соседними элементами в потоке</h4>
 
                     <div class="content__rules-info">
@@ -97,25 +97,25 @@
                             снизу — второй список. А для второго, не имеющего такого соседа, — отступа нет.
                         </p>
 
-                        <img class="content__rules-img4" src="./img/4.jpg" alt="img4">
-
-                        <p>На скриншоте — выпадение отступов. Отступ есть, но он не увеличивает размер
-                            «родителя» с голубым фоном, образуя лишний отступ — типичную ошибку вёрстки.
-                        </p>
+                        <figure>
+                            <img class="content__rules-img4" src="./img/4.jpg" alt="img4">
+                            <figcaption>На скриншоте — выпадение отступов. Отступ есть, но он не увеличивает размер
+                                «родителя» с голубым фоном, образуя лишний отступ — типичную ошибку вёрстки.</figcaption>
+                        </figure>
 
                     </div>
                 </div>
 
-                <div class="content__rules-third">
+                <div class="content__rules-third" id="third-rule">
                     <h4 class="content__rules-third-text">Последнему элементу группы нужно обнулять отступ</h4>
 
                     <div class="content__rules-info">
                         <p>Это легко сделать с помощью псевдоклассов в CSS. Например, есть псевдокласс
-                            :last-child, который позволяет выбрать последний элемент из группы (например, как в
+                            <b>:last-child</b>, который позволяет выбрать последний элемент из группы (например, как в
                             нашем случае: мы найдём последний элемент списка).
                         </p>
 
-                        <p>С помощью :last-child мы обнуляем отступ у последнего ul, как показано в примере.
+                        <p>С помощью <b>:last-child</b>  мы обнуляем отступ у последнего <b>ul</b>, как показано в примере.
                             Теперь всё работает как надо
                         </p>
 
@@ -157,6 +157,7 @@
 
     <footer class="footer_container">
         <section class="result">
+            <h1 class="result__stile">Итог</h1>
             <p class="result__text">Это основные правила организации отступов, которые помогут вам сделать вёрстку
             качественной и гибкой. Главное — начать им следовать. Со временем их соблюдение
             войдёт в привычку и вы начнёте сразу понимать, где можно допустить ошибку и как её
