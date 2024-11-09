@@ -77,6 +77,10 @@ a {
   background-color: transparent;
 }
 
+a:last-child {
+	padding-bottom: 0;
+}
+
 /**
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -226,6 +230,10 @@ button:-moz-focusring,
  * Correct the padding in Firefox.
  */
 
+ button:last-child {
+	padding-bottom: 0;
+ }
+
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -347,3 +355,57 @@ template {
 [hidden] {
   display: none;
 }
+
+ul:last-child {
+	padding-bottom: 0;
+ }
+
+li:last-child {
+  padding-bottom: 0;
+ }
+
+ h1:last-child {
+  padding-bottom: 0;
+ }
+
+ h2:last-child {
+  padding-bottom: 0;
+ }
+
+ h3:last-child {
+  padding-bottom: 0;
+ }
+
+ h4:last-child {
+  padding-bottom: 0;
+ }
+
+ h5:last-child {
+  padding-bottom: 0;
+ }
+
+ h6:last-child {
+  padding-bottom: 0;
+ }
+
+
+button:last-child {
+  padding-bottom: 0;
+}
+
+
+img{
+  box-shadow: none;
+  outline: none;
+  padding: 0  ;
+}
+
+a{
+  text-decoration: none;
+}
+
+figure{
+  margin: 0;
+  padding: 0;
+}
+
