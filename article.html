@@ -28,114 +28,114 @@
         </header>
 
         <main class="main">
-            <div class="main_gray-box">
-                <h2 class="main_gray-box-title">Содержание</h2>
-                <p class="main_gray-box-text">
+            <div class="main__gray-box">
+                <h2 class="main__gray-box-title">Содержание</h2>
+                <p class="main__gray-box-text">
                     Первая из частей - HTML. Это начальная стадия соблюдения кодстайла, ведь любой
                     сайт вы начинаете писать именно с этого языка. Давайте посмотрим на основные
                     правила:
                 </p>
-                <ul class="main-list">
-                    <li class="main-rule"><a href="#rules">Основные принципы работы с отступами</a></li>
-                    <li class="main-rule"><a href="#first-rule">Первый принцип: отступы от предыдущего к следующему</a></li>
-                    <li class="main-rule"><a href="#second-rule">Второй принцип: отступы задаются только между соседями</a></li>
-                    <li class="main-rule"><a href="#third-rule">Третий принцип: у последнего элемента группы обнуляем отступ</a></li>
+                <ul class="main__list">
+                    <li class="main__rule"><a href="#rules">Основные принципы работы с отступами</a></li>
+                    <li class="main__rule"><a href="#first-rule">Первый принцип: отступы от предыдущего к следующему</a></li>
+                    <li class="main__rule"><a href="#second-rule">Второй принцип: отступы задаются только между соседями</a></li>
+                    <li class="main__rule"><a href="#third-rule">Третий принцип: у последнего элемента группы обнуляем отступ</a></li>
                 </ul>
             </div>
 
             <div class="main__section">
                 <section class="section-first" id="rules">
-                    <h3 class="section-title" id="rules">Основные принципы работы с отступами</h3>
-                    <p class="section-text">
+                    <h3 class="section__title">Основные принципы работы с отступами</h3>
+                    <p class="section__text">
                         У любого сайта или документа есть так называемый поток — порядок вывода объектов
                         в документе. В вёрстке этот поток идёт сверху вниз, слева направо. Именно поэтому,
                         если какой-то элемент на макете находится справа, он должен в HTML-коде идти
                         последним из своей группы.
                     </p>
 
-                    <p class="section-text">Исходя из этого, можно сразу сформулировать первый принцип.</p>
+                    <p class="section__text">Исходя из этого, можно сразу сформулировать первый принцип.</p>
                 </section>
 
-                <div class="content__rules-first" id="first-rule">
-                    <h3 class="content__rules-subtitle">Отступы задаются от предыдущего элемента к следующему</h3>
+                <div class="section__rules-first" id="first-rule">
+                    <h3 class="section__rules-title">Отступы задаются от предыдущего элемента к следующему</h3>
 
-                    <p class="content__rules-text">Это значит, что в вёрстке нужно стараться использовать CSS-свойства <b>margin-right</b> и
+                    <p class="section__rules-text">Это значит, что в вёрстке нужно стараться использовать CSS-свойства <b>margin-right</b> и
                         <b>margin-bottom</b>, то есть отступ справа и отступ снизу. Проще говоря - избегаем
                         отступов слева и сверху полностью.
                     </p>
 
-                    <figure class="section-figure">
-                        <img class="figure-img" src="./img/1.jpg" alt="Скриншот с примером, как правильно задавать отступы">
-                        <figcaption class="figure-text">На скриншоте видно, как правильно задавать отступы, - только справа и снизу (показано оранжевым)</figcaption>
+                    <figure class="section__figure">
+                        <img class="figure__img" src="./img/1.jpg" alt="Скриншот с примером, как правильно задавать отступы">
+                        <figcaption class="figure__text">На скриншоте видно, как правильно задавать отступы, - только справа и снизу (показано оранжевым)</figcaption>
                     </figure>
 
-                    <div class="content-rules-info">
-                        <p class="content__rules-text">Внешние отступы сверху и слева <b>(margin-top и margin-left)</b> заменяются на
+                    <div class="section-rules-info">
+                        <p class="section__rules-text">Внешние отступы сверху и слева <b>(margin-top и margin-left)</b> заменяются на
                                 аналогичные внутренние отступы <b>(padding)</b> у родителя элементов.
                         </p>
 
-                    <img class="section-img" src="./img/2.jpg" alt="Скриншот, где можно увидеть, что блок не может сдвигаться благодаря своим отступам">
+                    <img class="section__img" src="./img/2.jpg" alt="Скриншот, где можно увидеть, что блок не может сдвигаться благодаря своим отступам">
 
-                    <p class="section-text">Получается, что блок не может сдвигаться благодаря своим отступам, — он делает это
-                        только за счёт соседних элементов (и сам двигает соседние).
+                    <p class="section__text">Получается, что блок не может сдвигаться       благодаря своим отступам, — он делает это только за счёт соседних элементов (и сам двигает соседние).
                     </p>
                 </section>
 
                 <section class="section-second" id="second-rule">
                     <h3 class="section-title">Отступы задаются только между соседними элементами в потоке</h3>
-                    <p class="section-text">Если у блока нет соседа с левой стороны — задавать ему отступ слева нельзя. То же
+                    <p class="section__text">Если у блока нет соседа с левой стороны — задавать ему отступ слева нельзя. То же
                         самое касается любой из сторон.
                     </p>
 
-                    <img class="section-img" src="./img/3.jpg" alt="Скриншот с верным примером отступов у двух списков">
+                    <img class="section__img" src="./img/3.jpg" alt="Скриншот с верным примером отступов у двух списков">
 
-                    <p class="section-text">У обоих задан отступ снизу. Для первого списка это применимо, потому что есть сосед
+                    <p class="section__text">У обоих задан отступ снизу. Для первого списка это применимо, потому что есть сосед
                         снизу — второй список. А для второго, не имеющего такого соседа, — отступа нет.
                     </p>
 
-                    <figure class="section-figure">
-                        <img class="figure-img" src="./img/4.jpg" alt="nothing">
-                        <figcaption class="figure-text">На скриншоте — выпадение отступов. Отступ есть, но он не увеличивает размер
-                            «родителя» с голубым фоном, образуя лишний отступ — типичную ошибку вёрстки.</figcaption>
+                    <figure class="section__figure">
+                        <img class="figure__img" src="./img/4.jpg" alt="">
+                        <figcaption class="figure__text">На скриншоте — выпадение отступов. Отступ есть, но он не увеличивает размер
+                        «родителя» с голубым фоном, образуя лишний отступ — типичную ошибку вёрстки.
+                        </figcaption>
                     </figure>
                 </section>
 
-                    <div class="content__rules-third" id="third-rule">
-                        <h3 class="content__rules-third-text">Последнему элементу группы нужно обнулять отступ</h3>
+                    <div class="section__rules-third" id="third-rule">
+                        <h3 class="section__rules-third-text">Последнему элементу группы нужно обнулять отступ</h3>
 
-                        <div class="content__rules-info">
-                            <p class="content__rules-text">Это легко сделать с помощью псевдоклассов в CSS. Например, есть псевдокласс
+                        <div class="section__rules-info">
+                            <p class="section__rules-text">Это легко сделать с помощью псевдоклассов в CSS. Например, есть псевдокласс
                                 <b>:last-child</b>, который позволяет выбрать последний элемент из группы (например, как в
                                 нашем случае: мы найдём последний элемент списка).
                             </p>
 
-                            <p class="content__rules-text">С помощью <b>:last-child</b>  мы обнуляем отступ у последнего <b>ul</b>, как показано в примере.
+                            <p class="section__rules-text">С помощью <b>:last-child</b>  мы обнуляем отступ у последнего <b>ul</b>, как показано в примере.
                                 Теперь всё работает как надо
                             </p>
 
-                    <img class="section-img" src="./img/5.jpg" alt="Фотография с примером использования свойства :last-child">
+                    <img class="section__img" src="./img/5.jpg" alt="Фотография с примером использования свойства :last-child">
 
-                            <p class="content__rules-text">Чтобы не создавать два селектора, можно написать короче, используя псевдокласс
+                            <p class="section__rules-text">Чтобы не создавать два селектора, можно написать короче, используя псевдокласс
                                 :not. Тут мы буквально говорим следующее: «Задай отступ всем ul, но не последнему».
                             </p>
 
-                    <img class="section-img" src="./img/6.jpg" alt="Фотография с примером использования свойства :not">
+                    <img class="section__img" src="./img/6.jpg" alt="Фотография с примером использования свойства :not">
                 </section>
 
                 <section class="section-example">
-                    <h3 class="section-title">Типичный пример: отступы в карточке</h3>
-                    <p class="section-text">
+                    <h3 class="section__title">Типичный пример: отступы в карточке</h3>
+                    <p class="section__text">
                         Рассмотрим типичный пример — реализацию карточки с контентом на сайте. Как здесь
                         лучше поступить?
                     </p>
-                    <p class="section-text">В нашем примере самая простая карточка: с картинкой, заголовком и описанием. Как
+                    <p class="section__text">В нашем примере самая простая карточка: с картинкой, заголовком и описанием. Как
                         правильнее сделать отступы у заголовка и описания? На самом деле, всё очень
                         просто: нужно применить принципы, о которых я рассказал.
                     </p>
 
-                    <img class="section-img" src="./img/7.jpg" alt="Фотография с верным примером применения внутреннего отступа у карточки">
+                    <img class="section__img" src="./img/7.jpg" alt="Фотография с верным примером применения внутреннего отступа у карточки">
 
-                    <p class="section-text">
+                    <p class="section__text">
                         Нам достаточно обернуть весь текст карточки в блок и задать блоку внутренний отступ
                         — padding. Так наша вёрстка будет соответствовать сразу трём принципам. А чтобы
                         сделать отступ между заголовком и описанием, достаточно просто сделать отступ
@@ -145,9 +145,9 @@
         </main>
 
         <footer class="footer">
-            <div class="footer_gray-box">
-                <h3 class="footer_gray-box-title">Итог</h3>
-                <p class="footer_gray-box-text">
+            <div class="footer__gray-box">
+                <h3 class="footer__gray-box-title">Итог</h3>
+                <p class="footer__gray-box__text">
                     Это основные правила организации отступов, которые помогут вам сделать вёрстку
                     качественной и гибкой. Главное — начать им следовать. Со временем их соблюдение
                     войдёт в привычку и вы начнёте сразу понимать, где можно допустить ошибку и как её
