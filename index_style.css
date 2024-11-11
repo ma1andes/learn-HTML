@@ -1,0 +1,57 @@
+body{
+    background-color: var(--bg-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --main-color: white;
+    --bg-color: black;
+}
+
+.header__container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__links{
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.main__modules{
+    color: var(--main-color);
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.main__article{
+    color: var(--main-color);
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+.main__download-link{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.main__download{
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+
